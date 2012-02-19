@@ -1,4 +1,6 @@
 syntax on
+set guioptions -=T
+colorscheme solarized
 set hlsearch
 set sw=4 ts=4 et
 filetype plugin indent on
