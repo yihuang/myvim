@@ -7,3 +7,6 @@
 [submodule "_vim/bundle/syntastic"]
 	path = _vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "_vim/bundle/vim-session"]
+	path = _vim/bundle/vim-session
+	url = git://github.com/xolox/vim-session.git
