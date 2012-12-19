@@ -3,8 +3,8 @@ syntax on
 if has('gui_running')
     set guioptions-=m
     set guioptions-=T
-    colorscheme solarized
 else
+    "colorscheme solarized
 end
 set background=dark
 set fileencodings=utf-8,gbk
@@ -14,7 +14,8 @@ filetype plugin indent on
 
 nnoremap ,e :e <C-R>=expand('%:p:h') . '/'<CR>
 nmap <C-L> :BufExplorer<CR>
-nmap <F8> :TagbarToggle<CR>
+nmap <F11> :TagbarToggle<CR>
+nmap <F2> Oimport pdb;pdb.set_trace()<ESC>
 
 call pathogen#infect()
 
@@ -22,3 +23,5 @@ let g:Powerline_symbols = 'fancy'
 let g:session_autosave = 'yes'
 let g:session_autoload = 'no'
 let g:proj_flags="imstcg"
+
+au BufNewFile,BufRead *.py set foldmethod=indent foldnestmax=2

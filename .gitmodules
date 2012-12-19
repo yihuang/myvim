@@ -19,3 +19,12 @@
 [submodule "_vim/bundle/tagbar"]
 	path = _vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule "_vim/bundle/csv.vim"]
+	path = _vim/bundle/csv.vim
+	url = git://github.com/chrisbra/csv.vim.git
+[submodule "_vim/bundle/vim-protobuf"]
+	path = _vim/bundle/vim-protobuf
+	url = git://github.com/uarun/vim-protobuf.git
+[submodule "_vim/bundle/vim-makeshift"]
+	path = _vim/bundle/vim-makeshift
+	url = git://github.com/johnsyweb/vim-makeshift.git
