@@ -31,3 +31,6 @@
 [submodule "_vim/bundle/vim-cycle"]
 	path = _vim/bundle/vim-cycle
 	url = git@github.com:yihuang/vim-cycle.git
+[submodule "_vim/bundle/gundo.vim"]
+	path = _vim/bundle/gundo.vim
+	url = http://github.com/sjl/gundo.vim.git
