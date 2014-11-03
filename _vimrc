@@ -19,6 +19,7 @@ else
 end
 colorscheme solarized
 set background=dark
+set laststatus=2
 set fileencodings=utf-8,gbk
 set hlsearch
 set incsearch
@@ -38,6 +39,7 @@ let g:proj_flags="imstcg"
 
 au BufNewFile,BufRead *.py set foldmethod=indent foldnestmax=2
 au BufNewFile,BufRead *.lua set foldmethod=indent foldnestmax=2
+au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim 
 
 nmap <C-n> :bnext<CR>
 nmap <C-p> :bprev<CR>
@@ -46,8 +48,8 @@ nmap <Leader>l :setlocal number!<CR>
 nmap <Leader>o :set paste!<CR>
 nmap <Leader>q :nohlsearch<CR>
 
-nmap j gj
-nmap k gk
+nnoremap j gj
+nnoremap k gk
 
 let g:ctrlp_map = '<Leader>;'
 let g:ctrlp_match_window_bottom = 1
