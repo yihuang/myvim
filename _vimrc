@@ -2,6 +2,7 @@ call pathogen#infect()
 filetype off
 filetype plugin indent on
 
+set guifont="Monaco for Powerline 10"
 syntax enable
 syntax on
 if has('gui_running')
@@ -29,3 +30,4 @@ let g:session_autoload = 'no'
 let g:proj_flags="imstcg"
 
 au BufNewFile,BufRead *.py set foldmethod=indent foldnestmax=2
+au BufNewFile,BufRead *.lua set foldmethod=indent foldnestmax=2

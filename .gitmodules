@@ -34,3 +34,9 @@
 [submodule "_vim/bundle/gundo.vim"]
 	path = _vim/bundle/gundo.vim
 	url = http://github.com/sjl/gundo.vim.git
+[submodule "_vim/bundle/elm"]
+	path = _vim/bundle/elm
+	url = https://github.com/lambdatoast/elm.vim.git
+[submodule "_vim/bundle/cstrlp.vim"]
+	path = _vim/bundle/cstrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
