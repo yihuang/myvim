@@ -28,9 +28,9 @@ filetype plugin indent on
 
 nnoremap ,e :e <C-R>=expand('%:p:h') . '/'<CR>
 nmap <C-L> :BufExplorer<CR>
-nmap <F11> :TagbarToggle<CR>
-nmap <F3> :GundoToggle<CR>
-nmap <F2> Oimport pdb;pdb.set_trace()<ESC>
+nmap <C-F11> :TagbarToggle<CR>
+nmap <C-F3> :GundoToggle<CR>
+nmap <C-F2> Oimport pdb;pdb.set_trace()<ESC>
 
 let g:Powerline_symbols = 'fancy'
 let g:session_autosave = 'yes'
