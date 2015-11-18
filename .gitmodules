@@ -40,3 +40,72 @@
 [submodule "_vim/bundle/cstrlp.vim"]
 	path = _vim/bundle/cstrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "_vim/bundle/vimproc"]
+	path = _vim/bundle/vimproc
+	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "_vim/bundle/supertab"]
+	path = _vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "_vim/bundle/vim-indent-guides"]
+	path = _vim/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "_vim/bundle/fugitive"]
+	path = _vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "_vim/bundle/vim-extradite"]
+	path = _vim/bundle/vim-extradite
+	url = https://github.com/int3/vim-extradite.git
+[submodule "_vim/bundle/tabular"]
+	path = _vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "_vim/bundle/linediff"]
+	path = _vim/bundle/linediff
+	url = https://github.com/AndrewRadev/linediff.vim.git
+[submodule "_vim/bundle/vim-surround"]
+	path = _vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "_vim/bundle/sparkup"]
+	path = _vim/bundle/sparkup
+	url = https://github.com/rstacruz/sparkup.git
+[submodule "_vim/bundle/nerdtree"]
+	path = _vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "_vim/bundle/tslime"]
+	path = _vim/bundle/tslime
+	url = https://github.com/jgdavey/tslime.vim.git
+[submodule "_vim/bundle/ack.vim"]
+	path = _vim/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "_vim/bundle/python-mode"]
+	path = _vim/bundle/python-mode
+	url = https://github.com/klen/python-mode.git
+[submodule "_vim/bundle/clam.vim"]
+	path = _vim/bundle/clam.vim
+	url = https://github.com/sjl/clam.vim.git
+[submodule "_vim/bundle/commentary"]
+	path = _vim/bundle/commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "_vim/bundle/vim-airline"]
+	path = _vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "_vim/bundle/vim-easymotion"]
+	path = _vim/bundle/vim-easymotion
+	url = https://github.com/easymotion/vim-easymotion.git
+[submodule "_vim/bundle/vim-haskellConcealPlus"]
+	path = _vim/bundle/vim-haskellConcealPlus
+	url = https://github.com/enomsg/vim-haskellConcealPlus.git
+[submodule "_vim/bundle/haskell-vim"]
+	path = _vim/bundle/haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim.git
+[submodule "_vim/bundle/ghcmod-vim"]
+	path = _vim/bundle/ghcmod-vim
+	url = https://github.com/eagletmt/ghcmod-vim.git
+[submodule "_vim/bundle/vim-hdevtools"]
+	path = _vim/bundle/vim-hdevtools
+	url = https://github.com/bitc/vim-hdevtools.git
+[submodule "_vim/bundle/neco-ghc"]
+	path = _vim/bundle/neco-ghc
+	url = https://github.com/eagletmt/neco-ghc.git
+[submodule "_vim/bundle/vim-hoogle"]
+	path = _vim/bundle/vim-hoogle
+	url = https://github.com/Twinside/vim-hoogle.git

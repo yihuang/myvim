@@ -29,8 +29,8 @@ filetype plugin indent on
 nnoremap ,e :e <C-R>=expand('%:p:h') . '/'<CR>
 nmap <C-L> :BufExplorer<CR>
 nmap <C-F11> :TagbarToggle<CR>
-nmap <C-F3> :GundoToggle<CR>
-nmap <C-F2> Oimport pdb;pdb.set_trace()<ESC>
+nmap <Leader>2 Oimport pdb;pdb.set_trace()<ESC>
+nmap <C-p> :CtrlP<CR>
 
 let g:Powerline_symbols = 'fancy'
 let g:session_autosave = 'yes'
@@ -42,7 +42,6 @@ au BufNewFile,BufRead *.lua set foldmethod=indent foldnestmax=2
 au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim 
 
 nmap <C-n> :bnext<CR>
-nmap <C-p> :bprev<CR>
 
 nmap <Leader>l :setlocal number!<CR>
 nmap <Leader>o :set paste!<CR>
@@ -58,3 +57,11 @@ let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_switch_buffer = 0
+
+let g:airline_powerline_fonts = 1
+
+" Source the vimrc file after saving it
+augroup sourcing
+  autocmd!
+  autocmd bufwritepost .vimrc source $MYVIMRC
+augroup END
