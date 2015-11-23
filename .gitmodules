@@ -31,9 +31,6 @@
 [submodule "_vim/bundle/vim-cycle"]
 	path = _vim/bundle/vim-cycle
 	url = git://github.com/yihuang/vim-cycle.git
-[submodule "_vim/bundle/gundo.vim"]
-	path = _vim/bundle/gundo.vim
-	url = http://github.com/sjl/gundo.vim.git
 [submodule "_vim/bundle/elm"]
 	path = _vim/bundle/elm
 	url = https://github.com/lambdatoast/elm.vim.git
@@ -109,3 +106,6 @@
 [submodule "_vim/bundle/vim-hoogle"]
 	path = _vim/bundle/vim-hoogle
 	url = https://github.com/Twinside/vim-hoogle.git
+[submodule "_vim/bundle/vim-mundo"]
+	path = _vim/bundle/vim-mundo
+	url = https://github.com/simnalamburt/vim-mundo.git
