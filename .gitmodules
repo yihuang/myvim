@@ -34,9 +34,6 @@
 [submodule "_vim/bundle/elm"]
 	path = _vim/bundle/elm
 	url = https://github.com/lambdatoast/elm.vim.git
-[submodule "_vim/bundle/cstrlp.vim"]
-	path = _vim/bundle/cstrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
 [submodule "_vim/bundle/vimproc"]
 	path = _vim/bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
@@ -109,3 +106,6 @@
 [submodule "_vim/bundle/vim-mundo"]
 	path = _vim/bundle/vim-mundo
 	url = https://github.com/simnalamburt/vim-mundo.git
+[submodule "_vim/bundle/ctrlp.vim"]
+	path = _vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
