@@ -37,9 +37,6 @@
 [submodule "_vim/bundle/vimproc"]
 	path = _vim/bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
-[submodule "_vim/bundle/supertab"]
-	path = _vim/bundle/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "_vim/bundle/vim-indent-guides"]
 	path = _vim/bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
@@ -112,3 +109,12 @@
 [submodule "_vim/bundle/syntax"]
 	path = _vim/bundle/syntax
 	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule "_vim/bundle/YouCompleteMe"]
+	path = _vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "_vim/bundle/ultisnips"]
+	path = _vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "_vim/bundle/vim-snippets"]
+	path = _vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
