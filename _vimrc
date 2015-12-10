@@ -160,3 +160,20 @@ endfunction
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['haskell'] }
 let g:syntastic_haskell_hdevtools_args = '-g-Wall'
 let g:syntastic_cpp_compiler_options = '-std=c++11'
+
+function! InsertGates()
+  let gatename = substitute(toupper(expand("%:t")), "\\.", "_", "g")
+  execute "normal! i#ifndef " . gatename
+  execute "normal! o#define " . gatename . " "
+  execute "normal! Go#endif /* " . gatename . " */"
+  normal! kk
+endfunction
+autocmd BufNewFile *.{h,hpp} call InsertGates()
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
