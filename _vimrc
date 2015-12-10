@@ -126,7 +126,7 @@ set tags=tags;/,codex.tags;/
 " Generate haskell tags with codex and hscope
 map <leader>tg :!codex update --force<CR>:call system("git-hscope -X TemplateHaskell")<CR><CR>:call LoadHscope()<CR>
 
-set csprg=~/.local/bin/hscope
+autocmd FileType haskell set csprg=~/.local/bin/hscope
 set csto=1 " search codex tags first
 set cst
 set csverb
@@ -148,7 +148,6 @@ au BufEnter /*.hs call LoadHscope()
 let g:necoghc_enable_detailed_browse = 1
 " Resolve ghcmod base directory
 au FileType haskell let g:ghcmod_use_basedir = getcwd()
-let g:syntastic_haskell_hdevtools_args = '-g-Wall'
 
 function! Pointfree()
   call setline('.', split(system('pointfree '.shellescape(join(getline(a:firstline, a:lastline), "\n"))), "\n"))
@@ -157,3 +156,7 @@ endfunction
 function! Pointful()
   call setline('.', split(system('pointful '.shellescape(join(getline(a:firstline, a:lastline), "\n"))), "\n"))
 endfunction
+
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['haskell'] }
+let g:syntastic_haskell_hdevtools_args = '-g-Wall'
+let g:syntastic_cpp_compiler_options = '-std=c++11'
