@@ -9,12 +9,12 @@ if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gno
   set t_Co=256
 endif
 
-set guifont="Monaco for Powerline 10"
 syntax enable
 syntax on
 if has('gui_running')
     set guioptions-=m
     set guioptions-=T
+    set guifont=Monaco\ for\ Powerline:h12
 else
 end
 colorscheme solarized
