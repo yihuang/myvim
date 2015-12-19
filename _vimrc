@@ -69,10 +69,6 @@ augroup END
 let g:haskellmode_completion_ghc = 0
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
-let g:SuperTabDefaultCompletionType = 'context'
-if &omnifunc != ''
-    call SuperTabChain(&omnifunc, "<c-p>")
-endif
 nmap <leader>y "*y
 vmap <leader>y "*y
 nmap <leader>d "*d
@@ -160,6 +156,8 @@ endfunction
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['haskell'] }
 let g:syntastic_haskell_hdevtools_args = '-g-Wall'
 let g:syntastic_cpp_compiler_options = '-std=c++11'
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 
 function! InsertGates()
   let gatename = substitute(toupper(expand("%:t")), "\\.", "_", "g")
@@ -177,3 +175,14 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" `gf` jumps to the filename under the cursor.  Point at an import statement
+" and jump to it!
+python << EOF
+import os
+import sys
+import vim
+for p in sys.path:
+    if os.path.isdir(p):
+        vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
+EOF

@@ -118,3 +118,9 @@
 [submodule "_vim/bundle/vim-snippets"]
 	path = _vim/bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "_vim/bundle/h2cppx"]
+	path = _vim/bundle/h2cppx
+	url = https://github.com/vim-scripts/h2cppx.git
+[submodule "_vim/bundle/makeshift"]
+	path = _vim/bundle/makeshift
+	url = https://github.com/johnsyweb/vim-makeshift.git
