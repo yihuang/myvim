@@ -67,9 +67,6 @@
 [submodule "_vim/bundle/ack.vim"]
 	path = _vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
-[submodule "_vim/bundle/python-mode"]
-	path = _vim/bundle/python-mode
-	url = https://github.com/klen/python-mode.git
 [submodule "_vim/bundle/clam.vim"]
 	path = _vim/bundle/clam.vim
 	url = https://github.com/sjl/clam.vim.git
