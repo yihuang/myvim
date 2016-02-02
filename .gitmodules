@@ -121,3 +121,6 @@
 [submodule "_vim/bundle/makeshift"]
 	path = _vim/bundle/makeshift
 	url = https://github.com/johnsyweb/vim-makeshift.git
+[submodule "_vim/bundle/moonscript-vim"]
+	path = _vim/bundle/moonscript-vim
+	url = https://github.com/leafo/moonscript-vim.git
