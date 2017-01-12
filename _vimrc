@@ -9,12 +9,16 @@ if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gno
   set t_Co=256
 endif
 
+set tw=128
+"set fo-=l
+"set fo+=t
+
 syntax enable
 syntax on
 if has('gui_running')
     set guioptions-=m
     set guioptions-=T
-    set guifont=Monaco\ for\ Powerline:h12
+    set guifont=Monaco\ for\ Powerline:h11
 else
 end
 colorscheme solarized
@@ -24,6 +28,7 @@ set fileencodings=utf-8,gbk
 set hlsearch
 set incsearch
 set sw=4 ts=4 et
+set diffopt=filler,horizontal
 filetype plugin indent on
 
 nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
@@ -186,3 +191,20 @@ for p in sys.path:
     if os.path.isdir(p):
         vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
 EOF
+
+" If you prefer the Omni-Completion tip window to close when a selection is
+" made, these lines close it on movement in insert mode or when leaving
+" insert mode
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+le g:ycm_server_keep_logfmles = 1
+let g:ycm_confirm_extra_conf = 0
+
+let g:DoxygenToolkit_authorName="HuangYi, Boyaa Inc."
+let g:DoxygenToolkit_versionString="1.0"
+
+vmap zgq command Zhwrap
+
+au BufWritePost *.hs            silent !init-tags %
+au BufWritePost *.hsc           silent !init-tags %

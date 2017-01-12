@@ -124,3 +124,21 @@
 [submodule "_vim/bundle/moonscript-vim"]
 	path = _vim/bundle/moonscript-vim
 	url = https://github.com/leafo/moonscript-vim.git
+[submodule "_vim/bundle/DoxygenToolkit.vim"]
+	path = _vim/bundle/DoxygenToolkit.vim
+	url = https://github.com/mrtazz/DoxygenToolkit.vim.git
+[submodule "_vim/bundle/zhwrap.vim"]
+	path = _vim/bundle/zhwrap.vim
+	url = https://github.com/c9s/zhwrap.vim.git
+[submodule "_vim/bundle/swift.vim"]
+	path = _vim/bundle/swift.vim
+	url = https://github.com/keith/swift.vim.git
+[submodule "_vim/bundle/vdebug"]
+	path = _vim/bundle/vdebug
+	url = https://github.com/joonty/vdebug.git
+[submodule "_vim/bundle/vim-lua-ftplugin"]
+	path = _vim/bundle/vim-lua-ftplugin
+	url = https://github.com/xolox/vim-lua-ftplugin.git
+[submodule "_vim/bundle/vim-misc"]
+	path = _vim/bundle/vim-misc
+	url = https://github.com/xolox/vim-misc.git
