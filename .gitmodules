@@ -142,3 +142,9 @@
 [submodule "_vim/bundle/vim-misc"]
 	path = _vim/bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
+[submodule "_vim/bundle/vim-dispatch"]
+	path = _vim/bundle/vim-dispatch
+	url = git://github.com/tpope/vim-dispatch.git
+[submodule "_vim/bundle/emmet-vim"]
+	path = _vim/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim
