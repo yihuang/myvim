@@ -148,3 +148,6 @@
 [submodule "_vim/bundle/emmet-vim"]
 	path = _vim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim
+[submodule "_vim/bundle/rust.vim"]
+	path = _vim/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git

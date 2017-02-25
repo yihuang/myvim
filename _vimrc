@@ -208,3 +208,8 @@ vmap zgq command Zhwrap
 
 au BufWritePost *.hs            silent !init-tags %
 au BufWritePost *.hsc           silent !init-tags %
+
+map [[ ?{<CR>w99[{
+map ][ /}<CR>b99]}
+map ]] j0[[%/{<CR>
+map [] k$][%?}<CR>
