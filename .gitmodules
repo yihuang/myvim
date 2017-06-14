@@ -154,3 +154,12 @@
 [submodule "_vim/bundle/vim-bracketed-paste"]
 	path = _vim/bundle/vim-bracketed-paste
 	url = https://github.com/ConradIrwin/vim-bracketed-paste.git
+[submodule "_vim/bundle/vimux"]
+	path = _vim/bundle/vimux
+	url = https://github.com/benmills/vimux.git
+[submodule "_vim/bundle/neomake"]
+	path = _vim/bundle/neomake
+	url = https://github.com/neomake/neomake.git
+[submodule "_vim/bundle/vim-hindent"]
+	path = _vim/bundle/vim-hindent
+	url = https://github.com/alx741/vim-hindent.git

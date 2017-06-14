@@ -47,6 +47,9 @@ au BufNewFile,BufRead *.py set foldmethod=indent foldnestmax=2
 au BufNewFile,BufRead *.lua set foldmethod=indent foldnestmax=2
 au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim 
 
+autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/,$RUST_SRC_PATH/rusty-tags.vi
+autocmd BufWrite *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&"
+
 nmap <Leader>l :setlocal number!<CR>
 nmap <Leader>o :set paste!<CR>
 nmap <Leader>q :nohlsearch<CR>
@@ -213,3 +216,19 @@ map [[ ?{<CR>w99[{
 map ][ /}<CR>b99]}
 map ]] j0[[%/{<CR>
 map [] k$][%?}<CR>
+
+let g:ycm_global_ycm_extra_conf = '/Users/yihuang/.ycm_extra_conf.py'
+
+let g:tagbar_type_rust = {
+            \ 'ctagstype' : 'rust',
+            \ 'kinds' : [
+            \'T:types,type definitions',
+            \'f:functions,function definitions',
+            \'g:enum,enumeration names',
+            \'s:structure names',
+            \'m:modules,module names',
+            \'c:consts,static constants',
+            \'t:traits,traits',
+            \'i:impls,trait implementations',
+            \]
+            \}
