@@ -163,3 +163,6 @@
 [submodule "_vim/bundle/vim-hindent"]
 	path = _vim/bundle/vim-hindent
 	url = https://github.com/alx741/vim-hindent.git
+[submodule "_vim/bundle/vim-unimpaired"]
+	path = _vim/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
