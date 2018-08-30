@@ -166,3 +166,12 @@
 [submodule "_vim/bundle/vim-unimpaired"]
 	path = _vim/bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "_vim/bundle/dart-vim-plugin"]
+	path = _vim/bundle/dart-vim-plugin
+	url = https://github.com/dart-lang/dart-vim-plugin.git
+[submodule "_vim/bundle/racer-rust"]
+	path = _vim/bundle/racer-rust
+	url = https://github.com/racer-rust/vim-racer.git
+[submodule "_vim/bundle/vim-toml"]
+	path = _vim/bundle/vim-toml
+	url = https://github.com/cespare/vim-toml.git
