@@ -1,5 +1,11 @@
 call pathogen#infect()
 
+" temporary fix
+" https://github.com/vim/vim/issues/3117
+if has('python3')
+  silent! python3 1
+endif
+
 let mapleader = ","
 
 filetype off
@@ -163,9 +169,12 @@ endfunction
 
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['haskell'] }
 let g:syntastic_haskell_hdevtools_args = '-g-Wall'
-let g:syntastic_cpp_compiler_options = '-std=c++11'
+let g:syntastic_cpp_compiler_options = '-std=c++14'
 let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+let g:syntastic_cpp_compiler_options = ' -std=c++14 -stdlib=libc++'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_cpp_checkers = "cpplint"
+let g:syntastic_python_checkers = ['flake8']
 
 function! InsertGates()
   let gatename = substitute(toupper(expand("%:t")), "\\.", "_", "g")
@@ -186,7 +195,7 @@ let g:UltiSnipsEditSplit="vertical"
 
 " `gf` jumps to the filename under the cursor.  Point at an import statement
 " and jump to it!
-python << EOF
+python3 << EOF
 import os
 import sys
 import vim
@@ -201,8 +210,10 @@ EOF
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-le g:ycm_server_keep_logfmles = 1
+let g:ycm_server_keep_logfmles = 1
 let g:ycm_confirm_extra_conf = 0
+let g:ycm_global_ycm_extra_conf = '/Users/yihuang/.ycm_extra_conf.py'
+" let g:loaded_youcompleteme = 1
 
 let g:DoxygenToolkit_authorName="HuangYi, Boyaa Inc."
 let g:DoxygenToolkit_versionString="1.0"
@@ -217,8 +228,6 @@ map ][ /}<CR>b99]}
 map ]] j0[[%/{<CR>
 map [] k$][%?}<CR>
 
-let g:ycm_global_ycm_extra_conf = '/Users/yihuang/.ycm_extra_conf.py'
-
 let g:tagbar_type_rust = {
             \ 'ctagstype' : 'rust',
             \ 'kinds' : [
@@ -232,3 +241,13 @@ let g:tagbar_type_rust = {
             \'i:impls,trait implementations',
             \]
             \}
+
+" If you use qualified tags, then you have to change iskeyword to include
+" a dot.  Unfortunately, that affects a lot of other commands, such as
+" w, and \< \> regexes used by * and #.  For me, this is confusing because
+" it's inconsistent with vim keys everywhere else.
+" This binding temporarily modifies iskeyword just for the ^] command.
+" nnoremap <silent> <c-]> :setl iskeyword=@,_,48-57,39<cr><c-]>
+"     \:setl iskeyword=@,48-57,_,192-255<cr>
+
+let g:hindent_on_save = 0
