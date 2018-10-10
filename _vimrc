@@ -58,7 +58,6 @@ autocmd BufWrite *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expa
 
 nmap <Leader>l :setlocal number!<CR>
 nmap <Leader>o :set paste!<CR>
-nmap <Leader>q :nohlsearch<CR>
 
 nnoremap j gj
 nnoremap k gk
@@ -251,3 +250,8 @@ let g:tagbar_type_rust = {
 "     \:setl iskeyword=@,48-57,_,192-255<cr>
 
 let g:hindent_on_save = 0
+
+if executable("rg")
+    set grepprg=rg\ --vimgrep\ --no-heading
+    set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif

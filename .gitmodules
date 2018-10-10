@@ -175,3 +175,9 @@
 [submodule "_vim/bundle/vim-toml"]
 	path = _vim/bundle/vim-toml
 	url = https://github.com/cespare/vim-toml.git
+[submodule "_vim/bundle/grep.vim"]
+	path = _vim/bundle/grep.vim
+	url = https://github.com/vim-scripts/grep.vim
+[submodule "_vim/bundle/vim-isort"]
+	path = _vim/bundle/vim-isort
+	url = https://github.com/fisadev/vim-isort.git
